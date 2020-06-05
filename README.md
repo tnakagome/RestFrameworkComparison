@@ -1,5 +1,5 @@
 # REST Framework Comparison
-If you can freely choose a language and framework when implementing a REST server application, what would you choose? This is a collection of working codes in various languages with frameworks tested on MacOS.
+If you can freely choose a language and framework when implementing a REST server application that deal with JSON body, what would you choose? This is a collection of working codes in various languages with frameworks tested on MacOS.
 (Original blog post is [here](https://slainte.blog.ss-blog.jp/2019-04-26).)
 
 Note that these are just codes. Depending on the language, Java in particular, you may need a lot more than the codes, like project and build files. Other languages usually require installation of additional packages like the framework to be used.
