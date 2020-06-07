@@ -28,7 +28,6 @@ $ ruby myapp.rb
 ```
 5. Open another terminal and run the test script.
 ```sh
-$ cd myapp
 $ ./test.sh
 Hello Taro!
 ```

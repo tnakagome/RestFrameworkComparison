@@ -38,7 +38,6 @@ Example app listening on port 5000!
 ```
 8. Open another terminal, move into the myapp dir, and run the test script.
 ```sh
-$ cd myapp
 $ ./test.sh
 Hello Taro
 ```

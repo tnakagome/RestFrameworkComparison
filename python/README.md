@@ -24,7 +24,6 @@ $ ./myapp.py
 ```
 4. Open another terminal, go into the same myapp directory, and run the test script.
 ```sh
-$ cd myapp
 $ ./test.sh
 Hello Taro
 ```
