@@ -21,6 +21,8 @@ Hello Taro
 ```
 
 # Codes
+It is quite amazing that the amount of codes as little as these, and without huge configuration files, can run fully functioning web servers serving dynamic web contents. My first exposure to such a system was when I used Apache httpd-1.3.x with Perl CGI in Y2K. It was much messier back then. :)
+
 Here we go.
 
 ## Java
