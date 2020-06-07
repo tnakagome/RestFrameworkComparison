@@ -18,13 +18,13 @@ $vi myapp.rb
 
 4. Run the program.
 ```sh
-$ ruby myapp.rb
-uby/gems/2.7.0/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1526: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
+$ ruby myapp.rb 
+/usr/local/lib/ruby/gems/2.7.0/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1526: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
 /usr/local/lib/ruby/gems/2.7.0/gems/rack-2.2.2/lib/rack/handler/webrick.rb:26: warning: The called method `run' is defined here
-[2020-06-07 10:41:54] INFO  WEBrick 1.6.0
-[2020-06-07 10:41:54] INFO  ruby 2.7.1 (2020-03-31) [x86_64-darwin19]
-== Sinatra (v2.0.8.1) has taken the stage on 4567 for development with backup from WEBrick
-[2020-06-07 10:41:54] INFO  WEBrick::HTTPServer#start: pid=31563 port=4567
+[2020-06-07 10:50:17] INFO  WEBrick 1.6.0
+[2020-06-07 10:50:17] INFO  ruby 2.7.1 (2020-03-31) [x86_64-darwin19]
+== Sinatra (v2.0.8.1) has taken the stage on 5000 for development with backup from WEBrick
+[2020-06-07 10:50:17] INFO  WEBrick::HTTPServer#start: pid=31757 port=5000
 ```
 5. Open another terminal and run the test script.
 ```sh
