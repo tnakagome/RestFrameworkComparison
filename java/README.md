@@ -12,9 +12,10 @@ $ find . -type f
 
 ```
 
-2. Edit myapp/src/main/java/SparkSample/App.java and replace the code with the one in this git folder. The particular code is written using Java 1.8 syntax, so the properties section is necessary. It seems Maven defaults to Java 1.6.
+2. Edit myapp/src/main/java/SparkSample/App.java and replace the code with the one in this git folder.
 
-3. Merge these to the myapp/pom.xml. Do not delete the pre-existing junit dependency.
+3. Merge these to the myapp/pom.xml. Do not delete the pre-existing junit dependency. The particular code is written using Java 1.8 syntax, so the properties section is necessary. It seems Maven defaults to Java 1.6.
+
 ```xml
     <properties>
       <maven.compiler.target>1.8</maven.compiler.target>
