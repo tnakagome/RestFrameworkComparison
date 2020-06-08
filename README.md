@@ -33,8 +33,9 @@ package SparkSample;
 import static spark.Spark.*;
 import org.json.JSONObject;
 
-public class MyApp {
+public class App {
     public static void main(String[] args) {
+	port(5000);
         post("/hello", (req, res) -> {
         	JSONObject body = new JSONObject(req.body());
         	return "Hello " + body.getString("name");
@@ -49,7 +50,7 @@ public class MyApp {
 const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
-const port = 3000
+const port = 5000
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -61,6 +62,8 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 ## Perl
 #### Framework: [Mojolicious](https://mojolicious.org/)
 ```Perl
+#!/usr/local/bin/perl
+
 use Mojolicious::Lite;
 
 post '/hello' => sub {
@@ -69,7 +72,12 @@ post '/hello' => sub {
     $c->render(text => 'Hello ' . $hash->{name}, format=>'txt');
 };
 
-app->start;
+my $port   = 5000;
+my $daemon = Mojo::Server::Daemon->new(
+  app    => app,
+  listen => ["http://*:$port"]
+);
+$daemon->run;
 ```
 ## Python
 #### Framework: [Flask](https://palletsprojects.com/p/flask/)
@@ -89,6 +97,8 @@ app.run(host='0.0.0.0', port=5000, debug=True)
 #### Framework: [Sinatra](http://sinatrarb.com/)
 ```Ruby
 require 'sinatra'
+
+set :port, 5000
 
 post '/hello' do
   request.body.rewind
