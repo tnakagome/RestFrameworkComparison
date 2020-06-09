@@ -62,8 +62,6 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 ## Perl
 #### Framework: [Mojolicious](https://mojolicious.org/)
 ```Perl
-#!/usr/local/bin/perl
-
 use Mojolicious::Lite;
 
 post '/hello' => sub {
