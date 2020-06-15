@@ -25,7 +25,7 @@ It is quite amazing that the amount of codes as little as these, and without hug
 
 Here we go.
 
-## Java
+## [Java](java)
 #### Framework: [Spark](http://sparkjava.com/)
 ```Java
 package SparkSample;
@@ -44,7 +44,7 @@ public class App {
 }
 ```
 
-## JavaScript
+## [JavaScript](js)
 #### Framework: [express](https://expressjs.com/)
 ```JavaScript
 const express = require('express')
@@ -59,7 +59,7 @@ app.post('/hello', (req, res) => res.send('Hello ' + req.body.name))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 ```
-## Perl
+## [Perl](perl)
 #### Framework: [Mojolicious](https://mojolicious.org/)
 ```Perl
 use Mojolicious::Lite;
@@ -77,7 +77,7 @@ my $daemon = Mojo::Server::Daemon->new(
 );
 $daemon->run;
 ```
-## Python
+## [Python](python)
 #### Framework: [Flask](https://palletsprojects.com/p/flask/)
 ```Python
 from flask import Flask, request
@@ -91,7 +91,7 @@ def hello():
 app.run(host='0.0.0.0', port=5000, debug=True)
 ```
 
-## Ruby
+## [Ruby](ruby)
 #### Framework: [Sinatra](http://sinatrarb.com/)
 ```Ruby
 require 'sinatra'
