@@ -11,6 +11,7 @@ $ find . -type f
 ./myapp/src/main/java/myapp/App.java
 
 ```
+If maven ends up in error, try renaming the pom.xml that you have downloaded from git to something else and run the same maven command again.
 
 2. Edit myapp/src/main/java/SparkSample/App.java and replace the code with the one in this git folder.
 

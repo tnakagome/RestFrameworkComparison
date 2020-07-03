@@ -3,6 +3,7 @@
 ```sh
 $ brew install ruby
 ```
+For Linux, use a package manager like apt or yum to install the ruby interpreter.
 
 2. Install [sinatra](http://sinatrarb.com/intro.html).
 ```sh
@@ -13,7 +14,7 @@ $ gem install sinatra
 ```sh
 $ mkdir myapp
 $ cd myapp
-$vi myapp.rb
+$ vi myapp.rb
 ```
 
 4. Run the program.

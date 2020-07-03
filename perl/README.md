@@ -1,8 +1,8 @@
 ## How to Test the Script
-You must have perl and cpan working. I have installed them from [brew](https://brew.sh/).
+You must have perl and cpan working. For MacOS, I have installed them from [brew](https://brew.sh/). For Linux, a package manager like apt or yum should do the job.
 
 1. Follow the instructions in the [Mojolicious page](https://mojolicious.org/) to set up Mojolicious.
-2. Create myapp.pl or copy the file from this git folder.
+2. Create myapp.pl or copy the file from this git folder. Make sure that the first line points to the correct perl interpreter.
 ```sh
 $ vi myapp.pl
 ```

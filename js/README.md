@@ -6,6 +6,8 @@
 ```sh
 $ brew install npm
 ```
+For Linux, use a package manager like apt or yum to install npm. You may need to install a nodejs package, too.
+
 2. Create a working directory and cd into it.
 ```sh
 $ mkdir myapp

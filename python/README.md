@@ -1,5 +1,5 @@
 ## How to Test the Script
-I have used the python command that comes with MacOS. The version is 2.7.16.
+I have used the python command that comes with MacOS. The version is 2.7.16. For Linux, use a package manager like apt or yum to install python in case you do not have one. I used 2.7.12 that came with Ubuntu 16.04. You also need the pip command.
 
 1. Follow the [instruction](https://flask.palletsprojects.com/en/1.1.x/installation/) on the Flask website to install Flask framework. It is up to you whether to use venv. I do not.
 2. Create a directory and myapp.py inside it, or you can copy the file from this git folder.
