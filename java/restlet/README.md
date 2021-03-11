@@ -43,17 +43,17 @@ If maven ends up in error, try renaming the pom.xml that you have downloaded fro
     <dependency>
         <groupId>org.restlet.jse</groupId>
         <artifactId>org.restlet.ext.json</artifactId>
-        <version>2.2-RC4</version>
+        <version>2.3.12</version>
     </dependency>
     <dependency>
       <groupId>org.restlet.jse</groupId>
       <artifactId>org.restlet</artifactId>
-      <version>2.2-RC4</version>
+      <version>2.3.12</version>
     </dependency>
     <dependency>
       <groupId>org.restlet.jse</groupId>
       <artifactId>org.restlet.ext.simple</artifactId>
-      <version>2.2-RC4</version>
+      <version>2.3.12</version>
     </dependency>
     ...
   <dependencies>
