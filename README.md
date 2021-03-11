@@ -25,7 +25,7 @@ It is quite amazing that the amount of codes as little as these, and without hug
 
 Here we go.
 
-## [Java](java)
+## [Java](java/spark)
 #### Framework: [Spark](http://sparkjava.com/)
 ```Java
 package SparkSample;
