@@ -75,6 +75,28 @@ $ mvn exec:java -Dexec.mainClass=RestletSample.App
 $ ./test.sh
 Hello Taro
 ```
+You can also test the program using telnet. This one uses the GET method, unlike the above shell script that uses the POST method with body. Greeting.java supports  both methods.
+```sh
+$ telnet localhost 5000
+Trying ::1...
+Connected to localhost.
+Escape character is '^]'.
+GET /hi/Taro HTTP/1.1
+Host: localhost
+Connection: close
+
+HTTP/1.1 200 OK
+Content-Length: 11
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 11 Mar 2021 14:07:04 GMT
+Accept-Ranges: bytes
+Server: Restlet-Framework/2.3.12
+Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+Connection: close
+
+Hello Taro!
+```
+
 
 ## Tip
 How to generate classpath in case you want to execute it from outside Maven.

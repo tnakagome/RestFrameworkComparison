@@ -2,6 +2,8 @@
 If you can freely choose a language and framework when implementing a REST server application that deals with JSON body, what would you choose? This is a collection of working codes in various languages with frameworks tested on MacOS and Linux (Ubuntu).
 (Original blog post is [here](https://slainte.blog.ss-blog.jp/2019-04-26).)
 
+They all work stand-alone. Integration with other frameworks is not necessary.
+
 Note that these are just codes. Depending on the language, Java in particular, you may need a lot more than the codes, like project and build files. Other languages usually require installation of additional packages like the framework to be used.
 
 So which one do you like?
@@ -104,3 +106,9 @@ post '/hello' do
   "Hello #{data['name']}!"
 end
 ```
+
+## More Frameworks
+
+[Restlet](java/restlet)
+
+This is a Java REST framework by [Talend](https://restlet.talend.com/). While it requires a little more codes than Spark even for a small example like this, an external configuration file is not necessary. It has a build-in web server, so integraion with another framework is not required.
