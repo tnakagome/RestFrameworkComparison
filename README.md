@@ -1,6 +1,5 @@
 # REST Framework Comparison
 If you can freely choose a language and framework when implementing a REST server application that deals with JSON body, what would you choose? This is a collection of working codes in various languages with frameworks tested on MacOS and Linux (Ubuntu).
-(Original blog post is [here](https://slainte.blog.ss-blog.jp/2019-04-26).)
 
 They all work stand-alone. Integration with other frameworks is not necessary.
 
