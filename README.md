@@ -114,4 +114,4 @@ This is a Java REST framework by [Talend](https://restlet.talend.com/). While it
 
 [Spring Boot](java/spring/boot/)
 
-I could stay away from Spring Framework ever since I first saw  application codes on top of it. However, [Spring Boot](https://spring.io/projects/spring-boot) seemed easier, so why not. It can automatically add Tomcat into your app. No need to set up a seprate servlet container. Anootations make codes simple and clean. Worth a try.
+I could stay away from Spring Framework ever since I first saw  application codes on top of it. However, [Spring Boot](https://spring.io/projects/spring-boot) seemed easier, so why not. It can automatically add Tomcat into your app. No need to set up a seprate servlet container. Annotations make codes simple and clean. Worth a try.
