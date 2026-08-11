@@ -11,7 +11,7 @@ public class App extends Application {
         Component component = new Component();
         Application application = new App();
 
-        component.getServers().add(Protocol.HTTP, 5000);
+        component.getServers().add(Protocol.HTTP, 55555);
         component.getDefaultHost().attachDefault(application);
         component.start();
     }

@@ -24,8 +24,8 @@ $ ruby myapp.rb
 /usr/local/lib/ruby/gems/2.7.0/gems/rack-2.2.2/lib/rack/handler/webrick.rb:26: warning: The called method `run' is defined here
 [2020-06-07 10:50:17] INFO  WEBrick 1.6.0
 [2020-06-07 10:50:17] INFO  ruby 2.7.1 (2020-03-31) [x86_64-darwin19]
-== Sinatra (v2.0.8.1) has taken the stage on 5000 for development with backup from WEBrick
-[2020-06-07 10:50:17] INFO  WEBrick::HTTPServer#start: pid=31757 port=5000
+== Sinatra (v2.0.8.1) has taken the stage on 55555 for development with backup from WEBrick
+[2020-06-07 10:50:17] INFO  WEBrick::HTTPServer#start: pid=31757 port=55555
 ```
 5. Open another terminal and run the test script.
 ```sh

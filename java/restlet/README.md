@@ -77,7 +77,7 @@ Hello Taro
 ```
 You can also test the program using telnet. This one uses the GET method, unlike the above shell script that uses the POST method with body. Greeting.java supports  both methods.
 ```sh
-$ telnet localhost 5000
+$ telnet localhost 55555
 Trying ::1...
 Connected to localhost.
 Escape character is '^]'.
@@ -110,5 +110,5 @@ $ export CLASSPATH=`cat cp.txt`:`pwd`/target/myapp-1.0-SNAPSHOT.jar
 Then you should be able to run the program using the java command.
 ```sh
 $ java RestletSample.App
-Starting the Simple [HTTP/1.1] server on port 5000
+Starting the Simple [HTTP/1.1] server on port 55555
 ```
