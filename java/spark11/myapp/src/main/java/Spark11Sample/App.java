@@ -1,4 +1,4 @@
-package SparkSample;
+package Spark11Sample;
 
 import static spark.Spark.*;
 import org.json.JSONObject;

@@ -26,10 +26,10 @@ It is quite amazing that the amount of codes as little as these, and without hug
 
 Here we go.
 
-## [Java](java/spark)
-#### Framework: [Spark](http://sparkjava.com/)
+## [Java](java/spark11)
+#### Framework: [spark-11](https://github.com/nmondal/spark-11)
 ```Java
-package SparkSample;
+package Spark11Sample;
 
 import static spark.Spark.*;
 import org.json.JSONObject;
