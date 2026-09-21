@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'sinatra'
 
 set :port, 18080
