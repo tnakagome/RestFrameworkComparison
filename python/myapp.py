@@ -8,4 +8,4 @@ def hello():
     data = request.get_json()
     return "Hello " + data['name']
 
-app.run(host='0.0.0.0', port=55555, debug=True)
+app.run(host='0.0.0.0', port=18080, debug=True)

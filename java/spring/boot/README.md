@@ -56,7 +56,7 @@ Hello, Taro!
 ```
 To test the GET capability, use telnet:
 ```sh
-$ telnet localhost 55555
+$ telnet localhost 18080
 Trying ::1...
 Connected to localhost.
 Escape character is '^]'.

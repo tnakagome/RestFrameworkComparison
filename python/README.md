@@ -17,7 +17,7 @@ $ ./myapp.py
    WARNING: Do not use the development server in a production environment.
    Use a production WSGI server instead.
  * Debug mode: on
- * Running on http://0.0.0.0:55555/ (Press CTRL+C to quit)
+ * Running on http://0.0.0.0:18080/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 392-403-575

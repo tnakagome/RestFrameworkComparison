@@ -1,6 +1,6 @@
 require 'sinatra'
 
-set :port, 55555
+set :port, 18080
 
 post '/hello' do
   request.body.rewind

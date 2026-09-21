@@ -47,7 +47,7 @@ $ mvn compile package
 ```sh
 $ mvn exec:java -Dexec.mainClass=SparkSample.App
 ```
-The program will listen on port 55555 and continue to run in the foreground. (Press CTRL-C when you want to stop the program.)
+The program will listen on port 18080 and continue to run in the foreground. (Press CTRL-C when you want to stop the program.)
 
 6. Open another terminal and execute the test.sh.
 ```sh

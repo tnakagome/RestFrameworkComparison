@@ -36,7 +36,7 @@ $ vi test.sh
 7. Run the program.
 ```sh
 $ node myapp.js
-Example app listening on port 55555!
+Example app listening on port 18080!
 ```
 8. Open another terminal, move into the myapp dir, and run the test script.
 ```sh

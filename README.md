@@ -12,7 +12,7 @@ The test script posts a JSON text to the REST server like this.
 ```ShellScript
 #!/bin/sh
 
-PORT=55555
+PORT=18080
 
 curl -X POST -H "Content-Type: application/json" -d '{"name":"Taro"}' http://localhost:${PORT}/hello
 ```
@@ -36,7 +36,7 @@ import org.json.JSONObject;
 
 public class App {
     public static void main(String[] args) {
-        port(55555);
+        port(18080);
         post("/hello", (req, res) -> {
             JSONObject body = new JSONObject(req.body());
             return "Hello " + body.getString("name");
@@ -51,7 +51,7 @@ public class App {
 const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
-const port = 55555
+const port = 18080
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -71,7 +71,7 @@ post '/hello' => sub {
     $c->render(text => 'Hello ' . $hash->{name}, format=>'txt');
 };
 
-my $port   = 55555;
+my $port   = 18080;
 my $daemon = Mojo::Server::Daemon->new(
   app    => app,
   listen => ["http://*:$port"]
@@ -89,7 +89,7 @@ def hello():
     data = request.get_json()
     return "Hello " + data['name']
 
-app.run(host='0.0.0.0', port=55555, debug=True)
+app.run(host='0.0.0.0', port=18080, debug=True)
 ```
 
 ## [Ruby](ruby)
@@ -97,7 +97,7 @@ app.run(host='0.0.0.0', port=55555, debug=True)
 ```Ruby
 require 'sinatra'
 
-set :port, 55555
+set :port, 18080
 
 post '/hello' do
   request.body.rewind
