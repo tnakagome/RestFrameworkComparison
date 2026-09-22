@@ -18,42 +18,29 @@ If maven ends up in error, try renaming the pom.xml that you have downloaded fro
 
 3. Copy Greeting.java into myapp/src/main/java/RestletSample/Greeting.java
 
-4. Merge these to the myapp/pom.xml. Do not delete the pre-existing junit dependency. The particular code is written using Java 1.8 syntax, so the properties section is necessary. It seems Maven defaults to Java 1.6.
+4. Merge these to the myapp/pom.xml. Do not delete the pre-existing junit dependency.
 
 ```xml
   <properties>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
   </properties>
-  <repositories>
-    <repository>
-      <id>maven-restlet</id>
-      <name>Public online Restlet repository</name>
-      <url>https://maven.restlet.talend.com</url>
-    </repository>
-  </repositories>
-...
   <dependencies>
     ...
     <dependency>
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
-      <version>20200518</version>
+      <version>20260814</version>
     </dependency>
     <dependency>
-        <groupId>org.restlet.jse</groupId>
-        <artifactId>org.restlet.ext.json</artifactId>
-        <version>2.3.12</version>
-    </dependency>
-    <dependency>
-      <groupId>org.restlet.jse</groupId>
+      <groupId>org.restlet</groupId>
       <artifactId>org.restlet</artifactId>
-      <version>2.3.12</version>
+      <version>2.6.0</version>
     </dependency>
     <dependency>
-      <groupId>org.restlet.jse</groupId>
-      <artifactId>org.restlet.ext.simple</artifactId>
-      <version>2.3.12</version>
+      <groupId>org.restlet</groupId>
+      <artifactId>org.restlet.ext.json</artifactId>
+      <version>2.6.0</version>
     </dependency>
     ...
   <dependencies>
@@ -68,6 +55,12 @@ $ mvn compile package
 6. Run the program.
 ```sh
 $ mvn exec:java -Dexec.mainClass=RestletSample.App
+...
+[INFO] --- exec:3.6.4:java (default-cli) @ myapp ---
+Sep 22, 2026 11:40:38 AM org.restlet.engine.connector.NetServerHelper start
+INFO: Starting the internal [HTTP/1.1] server on port 18080
+Sep 22, 2026 11:40:38 AM org.restlet.Application start
+INFO: Starting RestletSample.App application
 ```
 
 7. Open another terminal and execute test.sh.
@@ -86,17 +79,15 @@ Host: localhost
 Connection: close
 
 HTTP/1.1 200 OK
-Content-Length: 11
-Content-Type: text/plain; charset=UTF-8
-Date: Thu, 11 Mar 2021 14:07:04 GMT
-Accept-Ranges: bytes
-Server: Restlet-Framework/2.3.12
+Server: Restlet-Framework/2.6.0
+Date: Tue, 22 Sep 2026 02:42:17 GMT
+Content-type: text/plain
 Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
-Connection: close
+Content-length: 11
+Accept-ranges: bytes
 
 Hello Taro!
 ```
-
 
 ## Tip
 How to generate classpath in case you want to execute it from outside Maven.
@@ -110,5 +101,6 @@ $ export CLASSPATH=`cat cp.txt`:`pwd`/target/myapp-1.0-SNAPSHOT.jar
 Then you should be able to run the program using the java command.
 ```sh
 $ java RestletSample.App
-Starting the Simple [HTTP/1.1] server on port 18080
+Starting the internal [HTTP/1.1] server on port 18080
+Starting RestletSample.App application
 ```
