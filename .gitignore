@@ -1,0 +1,16 @@
+/target/
+.gradle
+
+# MacOS
+**/.DS_Store
+
+# emacs
+**/*~
+
+# Eclipse
+.settings/*
+.classpath
+.project
+
+# IntelliJ IDEA
+.idea
