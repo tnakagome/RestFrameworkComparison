@@ -1,5 +1,5 @@
 ## How to Test the Program
-Set up Java SDK (8 or higher) and maven as prerequisites.
+Set up Java SDK (17 or higher) and maven as prerequisites.
 
 1. Create a maven project. This will generate a simple Java code.
 
