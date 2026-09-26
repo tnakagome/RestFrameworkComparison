@@ -66,7 +66,6 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 import io.ktor.server.netty.*
 import io.ktor.server.routing.*
 import io.ktor.server.application.*
-import io.ktor.http.*
 import io.ktor.server.response.*
 import io.ktor.server.request.*
 import io.ktor.server.engine.*
@@ -86,11 +85,8 @@ fun main(args: Array<String>) {
         install(ContentNegotiation) {
             json()
         }
+
         routing {
-            get("/hi/{name}") {
-                val name = call.parameters["name"]
-                call.respondText("Hello, ${name}!")
-            }
             post("/hello") {
                 val greeting = call.receive<Greeting>()
                 call.respondText("Hello, ${greeting.name}")
@@ -98,7 +94,6 @@ fun main(args: Array<String>) {
         }
     }.start(wait = true)
 }
-
 ```
 ## [Perl](perl)
 #### Framework: [Mojolicious](https://mojolicious.org/)
